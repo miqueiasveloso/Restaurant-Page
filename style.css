@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url('https://catnews.org/catcafe/wp-content/uploads/2015/11/1_Cat-Cafe_The-Plaid-Zebrajpg.jpg');
+    background-attachment: fixed;
+    background-size: 100%;
+  }
+  
+  #main-title h1 {
+    font-size: 60px;
+    letter-spacing: 0.6rem;
+    color: rgb(2, 19, 2);
+    margin: 0;
+    text-align: center;
+  }
+  
+  #nav {
+    height: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 4px;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .tab {
+    outline: none;
+    cursor: pointer;
+    padding-bottom: 10px;
+    border: 0;
+    font-family: inherit;
+    border-top: 4px solid rgba(2, 19, 2);
+    border-bottom: 4px solid rgba(2, 19, 2);
+  }
+
+  .tab:hover,
+  .tab:focus {
+    background-color: rgb(2, 19, 2);
+  }
+  
+  .tab:hover span,
+  .tab:focus span {
+    color: white;
+    text-shadow: 0px 0px 12px rgba(41, 41, 41, 0.4);
+    font-size: 32px;
+  }
+  
+  .tab span {
+    color: green;
+    font-size: 28px;
+    letter-spacing: 0.2rem;
+    transition: 0.1s;
+  }
+  
+  #tab-content {
+    padding: 40px;
+    min-height: 800px;
+    color: white;
+    animation: appear 1s ease-in-out;
+  }
+  
+  .flex-lay {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .grid-lay {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+  
+  .section {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: 0.2rem;
+  }
+  
+  .section-title {
+    font-size: 36px;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+  }
+
+  .section-description {
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 0 0 8px rgb(0, 0, 0);
+  }
+    
+  .active:hover span,
+  .active:focus span {
+    color: rgb(2, 19, 2);
+    text-shadow: 0px 0px 12px rgb(255, 255, 255);
+    font-size: 32px;
+  }
+
+  .active {
+    background-color: rgb(2, 19, 2);
+  }
+
+  .active:hover,
+  .active:focus {
+    background-color: rgb(2, 19, 2);
+  }
+
+
+  .coffee {
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    border: 4px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 10px 10px rgba(37, 16, 41, 0.7);
+    width: 640px;
+    height: 320px;
+    transition: 0.4s;
+    overflow: hidden;
+    margin: 20px 0;
+    animation: appear 1s ease-in-out;
+  }
+
+  .coffee .description {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: 0.2s;
+  }
+
+  .coffee img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .coffee:hover .description {
+    letter-spacing: 0.1rem;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+    transform: translateY(-100%);
+  }
+
+  .coffee:hover {
+    box-shadow: 0 0 20px 2px rgba(17, 109, 14, 0.7);
+    border-color: rgb(3, 34, 2);
+  }
+
+  .coffee .description h3 {
+    font-size: 22px;
+  }
+  
+  #footer {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 80px;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 0.1rem;
+    background-color: rgb(2, 19, 2);
+  }
